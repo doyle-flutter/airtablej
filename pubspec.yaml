@@ -1,7 +1,7 @@
 name: airtablej
 description: AirTable Flutter HTTP(s) Connection
 version: 1.0.1
-homepage: https://github.com/doyle-flutter/Recipe/blob/master/airtableConnect.dart
+homepage: https://github.com/doyle-flutter/airtablej/tree/main
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
