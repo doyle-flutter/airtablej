@@ -1,4 +1,4 @@
-group 'com.example.airtablej'
+group 'com.doyle.airtablej'
 version '1.0-SNAPSHOT'
 
 buildscript {
