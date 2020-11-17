@@ -10,11 +10,15 @@ import 'package:http/http.dart' as http;
 
 class Airtablej{
 
+  /// AirTable -> Account -> API Key
   final String key;
+  /// AirTable Table Name
   final String tableName;
+  /// AirTable  EndPoint : AirTable -> Table -> API Documentation
+  final String endPoint;
 
-  final String _endPoint = "https://api.airtable.com/v0/appwOWIDaRO0TiSDf/";
-
+  /// Response Body
+  /// |- Content-Type : JSON
   Map<String, dynamic> _result;
   Map<String, dynamic> get result => this._result;
   set result(Map<String, dynamic> serverData){
@@ -25,12 +29,27 @@ class Airtablej{
   Airtablej({
     @required this.key,
     @required this.tableName,
+    this.endPoint = "https://api.airtable.com/v0/appwOWIDaRO0TiSDf"
   }):assert(key != null), assert(tableName != null);
 
+  // HTTP Connect & Check
+  // OutPut : this.result
+  /// ex)
+  /// bool check = await AirTablej(...).connect();
+  ///
+  /// or
+  ///
+  /// AirTable air = new AirTablej(...)
+  /// await air.connect()
+  /// Map<String, dyanmic> result = air.result;
+  /// if(result == null)
+  /// else if(result.isEmpty)
+  /// return result
+  ///
   Future<bool> connect() async => Future.microtask(() async => await _net());
 
   Future<bool> _net() async{
-    final String _url = _endPoint + this.tableName + "?api_key=" + this.key;
+    final String _url = endPoint + '/' + this.tableName + "?api_key=" + this.key;
     try{
       final http.Response _res = await http.get(_url)
           .timeout(Duration(seconds: 8), onTimeout: () async => new http.Response("[]", 404));
