@@ -1,6 +1,6 @@
 name: airtablej
 description: AirTable Flutter HTTP(s) Connection
-version: 1.0.2
+version: 1.0.3
 homepage: https://github.com/doyle-flutter/airtablej/tree/main
 
 environment:

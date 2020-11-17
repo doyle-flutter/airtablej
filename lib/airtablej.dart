@@ -45,7 +45,6 @@ class Airtablej{
   /// if(result == null)
   /// else if(result.isEmpty)
   /// return result
-  ///
   Future<bool> connect() async => Future.microtask(() async => await _net());
 
   Future<bool> _net() async{
