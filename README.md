@@ -17,5 +17,5 @@ AirTable : [Link](https://airtable.com/)
 ```
 
 ### Update Schedule
- - [ ] Offset Methods : ~ `20/11/20
+ - [x] Offset Methods
  - [ ] DataClass : ~ `20/11/31
