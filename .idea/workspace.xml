@@ -4,9 +4,11 @@
     <list default="true" id="1092f773-a26f-47be-b823-cdf55742d2a9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/airtablej.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/ios/airtablej.podspec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/airtablej.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/airtablej.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,6 +16,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_29" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -26,6 +29,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -41,5 +45,31 @@
       <updated>1605530109877</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1396" height="208" key="GridCell.Tab.0.bottom" timestamp="1605940504316">
+      <screen x="0" y="25" width="1440" height="816" />
+    </state>
+    <state width="1396" height="208" key="GridCell.Tab.0.bottom/0.25.1440.816@0.25.1440.816" timestamp="1605940504316" />
+    <state width="1396" height="208" key="GridCell.Tab.0.center" timestamp="1605940504315">
+      <screen x="0" y="25" width="1440" height="816" />
+    </state>
+    <state width="1396" height="208" key="GridCell.Tab.0.center/0.25.1440.816@0.25.1440.816" timestamp="1605940504315" />
+    <state width="1396" height="208" key="GridCell.Tab.0.left" timestamp="1605940504315">
+      <screen x="0" y="25" width="1440" height="816" />
+    </state>
+    <state width="1396" height="208" key="GridCell.Tab.0.left/0.25.1440.816@0.25.1440.816" timestamp="1605940504315" />
+    <state width="1396" height="208" key="GridCell.Tab.0.right" timestamp="1605940504316">
+      <screen x="0" y="25" width="1440" height="816" />
+    </state>
+    <state width="1396" height="208" key="GridCell.Tab.0.right/0.25.1440.816@0.25.1440.816" timestamp="1605940504316" />
+    <state width="760" height="335" key="javadoc.popup.new" timestamp="1605923885694">
+      <screen x="0" y="25" width="1440" height="816" />
+    </state>
+    <state width="760" height="335" key="javadoc.popup.new/0.25.1440.816@0.25.1440.816" timestamp="1605923885694" />
+    <state x="385" y="165" width="670" height="676" key="search.everywhere.popup" timestamp="1605928540539">
+      <screen x="0" y="25" width="1440" height="816" />
+    </state>
+    <state x="385" y="165" width="670" height="676" key="search.everywhere.popup/0.25.1440.816@0.25.1440.816" timestamp="1605928540539" />
   </component>
 </project>

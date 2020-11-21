@@ -19,29 +19,44 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
     Future.microtask(() async{
-      final Airtablej _con = new Airtablej(
-        key: "YOUR_API_KEY",
+      final Airtablej air = new Airtablej(
+        key: "YOUR_KEY",
         tableName: "YOUR_TABLE_NAME",
       );
-      this.netCheck = await _con.connect();
-      if(this.netCheck) return print("Network Err !");
+      if(!await air.connect())return;
       setState(() {
-        this.airTableData = _con.result;
+        airTableData = air.result;
       });
+      Map<String, dynamic> _res2 = await air.addData(offset: air.result['offset'].toString());
+      if(_res2.isEmpty) return;
+      setState(() {
+        airTableData['records'].add(_res2['records']);
+      });
+      Map<String, dynamic> _res3 = await air.addData(offset: _res2['offset'].toString());
+      if(_res3.isEmpty) return;
+      setState(() {
+        airTableData['records'].add(_res3['records']);
+      });
+      return;
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('JamesDev : AirTable Connect'),
-        ),
-        body: Center(
-          child: this.netCheck == false
-              ? Text("Network ERR!")
-              : Text(this.airTableData ?? "loading ..."),
+      home: Builder(
+        builder: (BuildContext context) => Scaffold(
+          appBar: AppBar(
+            title: const Text('JamesDev : AirTable Connect'),
+          ),
+          body: SingleChildScrollView(
+            child: Container(
+              width: MediaQuery.of(context).size.width,
+              child: this.netCheck == false
+                ? Text("Network ERR!")
+                : Text(this.airTableData?.toString() ?? "loading ..."),
+            ),
+          ),
         ),
       ),
     );
